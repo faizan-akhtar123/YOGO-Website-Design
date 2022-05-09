@@ -1,0 +1,313 @@
+/* YOGO WEBSITE DESIGN */
+/* AUTHOR : FAIZAN AKHTAR */
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#fullcontainer{
+    background-color: #6900D1;
+    height: 87vh;
+}
+.unipadding{
+    padding: 0 7%;
+}
+#header{
+    display: flex;
+}
+#companylogo, #navbar{
+    flex: 1;
+}
+#navbar ul{
+    display: flex;
+    justify-content: end;
+}
+ul li{
+    padding: 10px;
+    list-style-type: none;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 2s;
+}
+ul li a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-bar{
+    display: none;
+}
+/* Lets start the magic */
+#magiccontainer{
+    display: flex;
+}
+#magic, #homepic{
+    flex: 1;
+}
+#magic{
+    align-self: center;
+}
+#magic h1{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 0;
+}
+#magic p{
+    color: white;
+}
+#homepic img{
+    width: 70%;
+}
+#joinfree{
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    transition: 2s;
+}
+#exploremore{
+    background: transparent;
+    color:white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid white;
+    transition: 2s;
+}
+#joinfree:hover, #exploremore:hover{
+    cursor: pointer;
+    background: red;
+}
+/* Testimonial section */
+#testimonialsection{
+    display: flex
+
+}
+#testimonial{
+    margin-top: 10%;
+    position: relative;
+    flex: 1;
+}
+#testimonial1{
+    margin-top: 10%;
+    position: relative;
+    flex: 1;
+    /* display: inline-block; */
+}
+#testimonial2{
+    margin-top: 10%;
+    position: relative;
+    flex: 1;
+    /* display: inline-block; */
+}
+.yingyue{
+    text-align: center;
+}
+.yingyue img{
+    border-radius: 50%;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7vh;
+    right: 33%
+}
+.profession{
+    text-align: center;
+    box-shadow: 16px 15px 64px beige;
+    border: 1px solid white;
+    margin-top: 8%;
+}
+.profession h3{
+    margin-top:10%;
+}
+.profession p:last-child{
+    padding-left: 0 23%;
+    /* padding: 0 28%; */
+    margin-top: 5%;
+    color: gray;
+}
+.profession p:first-child{
+    color: gray;
+}
+
+/* We provide a wide range of services */
+#services{
+    text-align: center;
+}
+#services h1{
+    font-size: 39px;
+}
+#delivery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 0;
+}
+.expressdelivery{
+    transition: 2s;
+    padding: 10px;
+}
+.expressdelivery:hover{
+    cursor: pointer;
+    background-color: #6900D1;
+    transform: translateY(10px);
+}
+/* We always love to hear */
+.lovetohear{
+    display: flex;
+    padding-top: 30px;
+    
+}
+.feature, .customers{
+    flex: 1;
+}
+.feature{
+    margin: 0 10px;
+}
+.feature img{
+    width: 100%;
+}
+.customers h1{
+    font-size: 40px;
+}
+.watchnow{
+    background-color: #6900D1;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+}
+/* Footer Section */
+.footersection{
+    background-color: #6900D1;
+}
+.subscribe h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 5%;
+}
+.email{
+    text-align: center;
+}
+#mail{
+    background-color: #6900d1;
+    outline: none;
+    color: white;
+    border-top: 1px solid #6900d1;
+    border-right: 1px solid #6900d1;
+    border-left: #6900d1;
+    border-bottom: 1px solid white;
+    text-align: center;
+    font-size: 18px;
+    width: 50%;
+}
+.subscribebtn{
+    text-align: center;
+    margin-top: 2%;
+
+}
+#subscribe-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 40px;
+}
+.footernotes{
+    text-align: center;
+    color: white;
+}
+/* Responsive Mobile Site */
+@media only screen and (max-width:500px){
+#header,#magiccontainer{
+    display: block;
+}
+#fullcontainer{
+    height: 93vh;
+}
+#navbar ul{
+    display: block;
+}
+#navbar{
+    background:#6900D1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    opacity: 0.9;
+    transition: 2s;
+    height: 80vh;
+}
+#navbar ul li {
+    padding: 30px;
+}
+#companylogo img{
+    width: 70px;
+}
+#menu-bar{
+    display:inline-block;
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+}
+#magic h1{
+    font-size: 40px;
+}
+/* We provide a wide range of services */
+#delivery{
+    display: block;
+}
+#services h1{
+    font-size: 28px;
+}
+.expressdelivery{
+    text-align: center;
+}
+/* We always love to hear */
+.lovetohear{
+    display: block;
+}
+.customers h1{
+    font-size: 30px;
+}
+.watchnow{
+    margin-bottom: 20px;
+}
+/* Testimonial Section */
+#testimonialsection{
+    display: block;
+}
+#testimonial{
+    margin-top: 17%;
+}
+.profession h3{
+    margin-top: 27%;
+}
+.yingyue img{
+    top: -3vh;
+}
+.subscribe h1{
+    margin-bottom:0;
+    font-size: 27px;
+}
+#mail{
+    width: 87%;
+}
+.email{
+    margin-bottom: 4%;
+}
+}
